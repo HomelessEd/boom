@@ -3,15 +3,61 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  height: 100vh;           /* full viewport height */
+  text-align: center;
+  gap: 30px;               /* vertical spacing between elements */
 }
 
+/* Headline */
 h1 {
   color: #333;
+  margin: 0;
 }
+
+/* Result messages */
 #result .green {
-  color: #2ecc71;
+  color: #32cd73;
+  font-size: 1.2rem;
 }
 
 #result .red {
-  color: #e74c3c;
+  color: #e75144;
+  font-size: 1.2rem;
+}
+
+/* Countdown display */
+#countdown {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0; /* spacing handled by flex gap */
+}
+
+/* Input box */
+#userInput {
+  width: 80px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0; /* spacing handled by flex gap */
+}
+
+/* Restart button */
+#restart {
+  background-color: #3498db; /* blue */
+  color: white;
+  padding: 15px 50px; /* fatter rectangle */
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart:hover {
+  background-color: #2980b9; /* darker blue on hover */
 }
